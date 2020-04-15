@@ -22,8 +22,7 @@ export default class Navigation extends React.Component<
     console.log("Constructor ran.");
   }
   componentDidMount() {
-    // const button: HTMLButtonElement | null = document.querySelector("button");
-    document.addEventListener("click", this.changeColor);
+    document.body.style.backgroundColor = this.state.color;
   }
   componentDidUpdate() {
     console.log('"componentDidUpdate()" ran.');
